@@ -1,0 +1,8 @@
+Genome sequencing data:
+ a. Eight Nolsoy samples (Island population)
+ b. Six Norwegian samples (Mainland population)
+
+Generating SFS:
+ a. GATK HaplotypeCaller
+ b. GATK HaplotypeCaller & Polarized against M. Caroli
+ c. Angsd
