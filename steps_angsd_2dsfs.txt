@@ -1,0 +1,9 @@
+For 8248 5kb windows:
+1. /home/payseurlab/Documents/peicheng/angsd/angsd/angsd -P 2 -bam ../Faroese_Genomes/Bamfiles_Realigned/bam_Nolsoy8.filelist -doSaf 1 -rf position_autosomes_8248_angsd.txt -minMapQ 1 -minQ 20 -out saf_nolsoy8_8248 -anc /mnt/payseurgenomes/peicheng/Faroese/mm10.fa -GL 2 &
+2. /home/payseurlab/Documents/peicheng/angsd/angsd/angsd -P 2 -bam ../Norwegian/Bamfiles_Indel_Realigned/bam_Norway6.filelist -doSaf 1 -rf position_autosomes_8248_angsd.txt -minMapQ 1 -minQ 20 -out saf_norway6_8248 -anc /mnt/payseurgenomes/peicheng/Faroese/mm10.fa -GL 2 &
+3. ~payseurlab/Documents/peicheng/angsd/angsd/misc/realSFS saf_norway6_8248.saf.idx saf_nolsoy8_8248.saf.idx -P 2 -fold 1 > 2dsfs_norway_nolsoy_8248.sfs &
+
+For whole genome
+1. /home/payseurlab/Documents/peicheng/angsd/angsd/angsd -P 2 -bam ../Faroese_Genomes/Bamfiles_Realigned/bam_Nolsoy8.filelist -doSaf 1 -out saf_nolsoy8 -anc /mnt/payseurgenomes/peicheng/Faroese/mm10.fa -GL 2 &
+2. /home/payseurlab/Documents/peicheng/angsd/angsd/angsd -P 2 -bam ../Norwegian/Bamfiles_Indel_Realigned/bam_Norway6.filelist -doSaf 1 -out saf_norway6 -anc /mnt/payseurgenomes/peicheng/Faroese/mm10.fa -GL 2 &
+3. ~payseurlab/Documents/peicheng/angsd/angsd/misc/realSFS saf_norway6.saf.idx saf_nolsoy8.saf.idx -P 2 -fold 1 > 2dsfs_norway_nolsoy.sfs &
