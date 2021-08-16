@@ -1,1 +1,0 @@
-# Demographic_History_Faroese
